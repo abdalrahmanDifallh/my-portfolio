@@ -42,7 +42,7 @@ export default function Contact() {
                 <input 
                   type="text" 
                   className="w-full bg-gray-950/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors" 
-                  placeholder="John Doe" 
+                  placeholder="Ahmad Sy" 
                 />
               </div>
               <div className="space-y-2">
@@ -50,7 +50,7 @@ export default function Contact() {
                 <input 
                   type="email" 
                   className="w-full bg-gray-950/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors" 
-                  placeholder="john@example.com" 
+                  placeholder="Ahmad@example.com" 
                 />
               </div>
             </div>

@@ -10,13 +10,12 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-950 text-white flex flex-col justify-center p-8 relative overflow-hidden perspective-1000">
-      
       {/* 1. صورتك الشخصية كخلفية مدمجة */}
       <div className="absolute inset-0 z-0">
         {/* طبقة التدرج اللوني لدمج الصورة مع الخلفية الداكنة وجعل النص مقروءاً */}
         <div className="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-950/80 to-transparent z-10" />
         <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-gray-950 z-10" />
-        
+
         {/* استدعاء الصورة من مجلد public */}
         <Image
           src="./ff.png" /* تأكد من أن اسم الصورة ومسارها صحيحان */
@@ -29,7 +28,7 @@ export default function Home() {
 
       {/* 2. القسم الرئيسي للنصوص (سيكون فوق الصورة بفضل z-10) */}
       <div className="max-w-3xl space-y-6 z-10 relative mt-20 lg:mt-0">
-        <motion.h1 
+        <motion.h1
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -37,51 +36,54 @@ export default function Home() {
         >
           Abd ulRahman Daifallah
         </motion.h1>
-        
-        <motion.h2 
+
+        <motion.h2
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
           className="text-2xl md:text-3xl text-gray-300 font-medium drop-shadow-md"
         >
-          Software Engineer | ASP.NET Web API & Microservices
+          Software Engineer | ASP.NET Web API & NextJs & FullStack
         </motion.h2>
-        
-        <motion.p 
+
+        <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
           className="text-lg text-gray-400 leading-relaxed max-w-xl mt-6 font-medium"
         >
-          Transforming complex architectural challenges into scalable, high-performance systems. 
-          Currently building robust backend solutions at Pal4IT, combining a strong foundation 
-          in Informatics Engineering from Damascus University with modern containerization and DevOps practices.
+          Transforming complex architectural challenges into scalable,
+          high-performance systems. Currently building robust backend solutions
+          at Pal4IT, combining a strong foundation in Informatics Engineering
+          from Damascus University with modern containerization and DevOps
+          practices.
         </motion.p>
-        
-        <motion.div 
+
+        <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.9 }}
           className="flex flex-col sm:flex-row gap-4 pt-8"
         >
+          <Link
+            href="/projects"
+            className="px-8 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 transition-colors duration-300 shadow-lg text-center"
+          >
+            View Projects
+          </Link>
 
-          <Link 
-          href="/projects" 
-          className="px-8 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 transition-colors duration-300 shadow-lg text-center"
-        >
-          View Projects
-        </Link>
-        
-
-          <button className="px-8 py-3 border border-gray-500 text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors duration-300 shadow-lg backdrop-blur-sm">
+          {/* استبدل زر Contact Me بهذا الكود */}
+          <a
+            href="#social"
+            className="px-8 py-3 border border-gray-500 text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors duration-300 shadow-lg backdrop-blur-sm text-center"
+          >
             Contact Me
-          </button>
+          </a>
         </motion.div>
       </div>
 
       {/* 3. محاكاة C++ والهولوغرام على اليمين */}
       <div className="hidden lg:flex absolute right-16 top-1/4 w-96 h-96 items-center justify-center perspective-1000 z-10">
-        
         {/* التوهج الخلفي العام */}
         <div className="absolute inset-0 bg-cyan-500/10 blur-[100px] rounded-full" />
 
@@ -114,7 +116,7 @@ export default function Home() {
           className="relative w-32 h-32 bg-cyan-950/80 backdrop-blur-md border border-cyan-400/60 flex items-center justify-center shadow-[0_0_60px_rgba(34,211,238,0.4)] transform-style-3d"
         >
           <div className="absolute inset-0 bg-cyan-400/20 blur-xl" />
-          
+
           <div className="text-center z-10">
             <span className="text-5xl font-bold text-cyan-300 drop-shadow-[0_0_15px_rgba(34,211,238,0.8)]">
               C++
@@ -122,10 +124,12 @@ export default function Home() {
           </div>
         </motion.div>
       </div>
-    <Skills />
-    <Projects />
-    <Contact />
-    <SocialBar />
+      <Skills />
+      <Projects />
+      <Contact />
+      <div id="social" className="z-[10]">
+        <SocialBar />
+      </div>
     </main>
   );
 }
