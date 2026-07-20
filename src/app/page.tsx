@@ -19,7 +19,7 @@ export default function Home() {
         
         {/* استدعاء الصورة من مجلد public */}
         <Image
-          src="/ff.png" /* تأكد من أن اسم الصورة ومسارها صحيحان */
+          src="./ff.png" /* تأكد من أن اسم الصورة ومسارها صحيحان */
           alt="Abd ulRahman Daifallah"
           fill
           className="object-cover object-left opacity-40 md:opacity-60"

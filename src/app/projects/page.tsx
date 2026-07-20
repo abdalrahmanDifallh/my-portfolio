@@ -7,7 +7,7 @@ export default function ProjectsPage() {
     {
       title: "Modern Landing Page",
       description: "A fully responsive, high-performance landing page deployed live. Designed with smooth animations and an optimized structure ready for seamless backend integration.",
-      imageUrl: "/landing-page-mockup.png", // تأكد من وجود الصورة
+      imageUrl: "./landing-page-mockup.png", // تأكد من وجود الصورة
       liveUrl: "https://6a5e1716aa800f47efcdc624--rainbow-cajeta-3df6ef.netlify.app/",
       githubUrl: "#",
       techStack: ["Next.js", "Tailwind CSS", "Vercel"]
@@ -15,7 +15,7 @@ export default function ProjectsPage() {
     {
     title: "IglooMart_Web E-Commerce",
     description: "A full-stack e-commerce platform built with ASP.NET Web API and MVC architecture. Features a robust SQL database backend with a custom, responsive HTML, CSS, and JavaScript frontend.",
-    imageUrl: "/igloomart-mockup.png", // ضع هنا مسار صورة متجر إيغلو مارت
+    imageUrl: "./igloomart-mockup.png", // ضع هنا مسار صورة متجر إيغلو مارت
     liveUrl: "https://igloomart.com/", // استبدل هذا برابط الموقع المباشر
     githubUrl: "#", // رابط المستودع
     techStack: ["ASP.NET API", "MVC", "SQL", "HTML/CSS/JS", "Full-Stack"]
