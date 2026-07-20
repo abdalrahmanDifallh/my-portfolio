@@ -6,6 +6,7 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import SocialBar from "@/components/SocialBar";
+import Link from "next/link";
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-950 text-white flex flex-col justify-center p-8 relative overflow-hidden perspective-1000">
@@ -63,9 +64,15 @@ export default function Home() {
           transition={{ duration: 0.5, delay: 0.9 }}
           className="flex flex-col sm:flex-row gap-4 pt-8"
         >
-          <button className="px-8 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 transition-colors duration-300 shadow-lg">
-            View Projects
-          </button>
+
+          <Link 
+          href="/projects" 
+          className="px-8 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 transition-colors duration-300 shadow-lg text-center"
+        >
+          View Projects
+        </Link>
+        
+
           <button className="px-8 py-3 border border-gray-500 text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors duration-300 shadow-lg backdrop-blur-sm">
             Contact Me
           </button>
