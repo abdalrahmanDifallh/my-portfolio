@@ -8,8 +8,8 @@ export default function ProjectsPage() {
       title: "Modern Landing Page",
       description: "A fully responsive, high-performance landing page deployed live. Designed with smooth animations and an optimized structure ready for seamless backend integration.",
       imageUrl: "/landing-page-mockup.png", // تأكد من وجود الصورة
-      liveUrl: "https://your-landing-page-url.com",
-      githubUrl: "https://github.com/your-username/repo-name",
+      liveUrl: "https://6a5e1716aa800f47efcdc624--rainbow-cajeta-3df6ef.netlify.app/",
+      githubUrl: "#",
       techStack: ["Next.js", "Tailwind CSS", "Vercel"]
     },
     {
