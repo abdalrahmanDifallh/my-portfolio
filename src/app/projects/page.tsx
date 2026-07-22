@@ -24,7 +24,7 @@ export default function ProjectsPage() {
     {
     title: "ProCleaning Corporate Website",
     description: "A modern, high-performance corporate website built for a professional cleaning services company. Developed using Next.js and Tailwind CSS with a focus on component-based architecture, featuring dynamic pricing toggles, interactive sliders, and fully responsive layouts.",
-    imageUrl: "/igloomart-mockup.png", 
+    imageUrl: "/02.png", 
     liveUrl: "https://landing02pag.netlify.app/", // رابط الموقع إذا رفعته
     githubUrl: "#", // رابط المستودع
     techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Responsive UI"]
